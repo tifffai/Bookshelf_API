@@ -1,0 +1,17 @@
+
+GET http://localhost:3000/books
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+    {
+        "title": "Homo",
+        "isbn": "004939085",
+        "author": "Yuval Noah Harari ",
+        "description": "Earth is 4.5 billion years old. In just a fraction of that time, one species among countless others has conquered it- us.In this bold and provocative book, Yuval Noah Harari explores who we are, how we got here and where we?re going.",
+        "price": 431
+    }
+
+###
+DELETE http://localhost:3000/books/5
